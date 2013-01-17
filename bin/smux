@@ -3,6 +3,14 @@
 $LOAD_PATH.unshift File.expand_path(File.dirname(__FILE__) + '/../lib')
 
 require 'rubygems'
+require 'smux/version'
+require 'smux/application'
 require 'trollop'
 
-puts "hello"
+opts = Trollop::options do
+  version "smux v#{Smux::VERSION} (c) Andrew De Ponte"
+  banner """Usage: smux [ -v | --version | -h | --help ] [ smux-script ]"""
+end
+
+app = Smux::Application.new(ARGV.shift)
+exit(app.run)
