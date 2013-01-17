@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Smux::VERSION
   gem.authors       = ["Andrew De Ponte"]
   gem.email         = ["cyphactor@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{smux is a session based tmux launcher and dsl. It is primarily used for creating per project tmux sessions and managing them.}
+  gem.summary       = %q{The session based tmux launcher}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
